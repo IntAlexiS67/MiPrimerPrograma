@@ -3,18 +3,13 @@ package org.alexisdieguez.view;
  *
  * @author Alexis Diéguez :D
  */
-import java.util.Scanner;
-import org.alexisdieguez.controller.ControllerLogica;
 import org.alexisdieguez.controller.ControllerMatematica;
-import org.alexisdieguez.controller.ControllerTexto;
 
 import java.util.Scanner;
 
-import java.util.Scanner;
+public class ViewMenuPrincipal {
 
-public class Main {
-
-    public static void main(String[] args) {
+    public static void mostrarMenu(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         int opcionPrincipal;
@@ -30,24 +25,15 @@ public class Main {
 
             switch (opcionPrincipal) {
 
-                case 1:
-                    menuMatematicas(sc);
-                    break;
+                case 1 -> menuMatematicas(sc);
 
-                case 2:
-                    System.out.println("Menu de Cadenas (pendiente)");
-                    break;
+                case 2 -> System.out.println("Menu de Cadenas (pendiente)");
 
-                case 3:
-                    System.out.println("Menu de Logica (pendiente)");
-                    break;
+                case 3 -> System.out.println("Menu de Logica (pendiente)");
 
-                case 4:
-                    System.out.println("Saliendo...");
-                    break;
+                case 4 -> System.out.println("Saliendo...");
 
-                default:
-                    System.out.println("Opcion invalida");
+                default -> System.out.println("Opcion invalida");
             }
 
         } while (opcionPrincipal != 4);
@@ -77,23 +63,23 @@ public class Main {
 
             switch (opcion) {
 
-                case 1:
+                case 1 -> {
                     System.out.print("Horas: ");
                     double h = sc.nextDouble();
                     System.out.print("Pago por hora: ");
                     double p = sc.nextDouble();
                     System.out.println("Salario: " + ControllerMatematica.calcularSalario(h, p));
-                    break;
+                }
 
-                case 2:
+                case 2 -> {
                     System.out.print("Base: ");
                     double b = sc.nextDouble();
                     System.out.print("Altura: ");
                     double alt = sc.nextDouble();
                     System.out.println("Area: " + ControllerMatematica.areaTriangulo(b, alt));
-                    break;
+                }
 
-                case 3:
+                case 3 -> {
                     System.out.print("Nota 1: ");
                     double n1 = sc.nextDouble();
                     System.out.print("Nota 2: ");
@@ -101,62 +87,59 @@ public class Main {
                     System.out.print("Nota 3: ");
                     double n3 = sc.nextDouble();
                     System.out.println("Promedio: " + ControllerMatematica.promedio(n1, n2, n3));
-                    break;
+                }
 
-                case 4:
+                case 4 -> {
                     System.out.print("Celsius: ");
                     double c = sc.nextDouble();
                     System.out.println("Fahrenheit: " + ControllerMatematica.celsiusFahrenheit(c));
-                    break;
+                }
 
-                case 5:
+                case 5 -> {
                     System.out.print("Radio: ");
                     double r = sc.nextDouble();
                     System.out.println("Perimetro: " + ControllerMatematica.perimetroCirculo(r));
-                    break;
+                }
 
-                case 6:
+                case 6 -> {
                     System.out.print("Radio: ");
                     double r2 = sc.nextDouble();
                     System.out.print("Altura: ");
                     double h2 = sc.nextDouble();
                     System.out.println("Volumen: " + ControllerMatematica.volumenCilindro(r2, h2));
-                    break;
+                }
 
-                case 7:
+                case 7 -> {
                     System.out.print("Cateto A: ");
                     double a = sc.nextDouble();
                     System.out.print("Cateto B: ");
                     double bb = sc.nextDouble();
                     System.out.println("Hipotenusa: " + ControllerMatematica.hipotenusa(a, bb));
-                    break;
+                }
 
-                case 8:
+                case 8 -> {
                     System.out.print("Dias: ");
                     int d = sc.nextInt();
                     System.out.println("Minutos: " + ControllerMatematica.diasMinutos(d));
-                    break;
+                }
 
-                case 9:
+                case 9 -> {
                     System.out.print("Dividendo: ");
                     int x = sc.nextInt();
                     System.out.print("Divisor: ");
                     int y = sc.nextInt();
                     System.out.println("Residuo: " + ControllerMatematica.residuo(x, y));
-                    break;
+                }
 
-                case 10:
+                case 10 -> {
                     System.out.print("Numero: ");
                     int num = sc.nextInt();
                     System.out.println("Cubo: " + ControllerMatematica.cubo(num));
-                    break;
+                }
 
-                case 11:
-                    System.out.println("Regresando al menu principal...");
-                    break;
+                case 11 -> System.out.println("Regresando al menu principal...");
 
-                default:
-                    System.out.println("Opcion invalida");
+                default -> System.out.println("Opcion invalida");
             }
 
         } while (opcion != 11);
