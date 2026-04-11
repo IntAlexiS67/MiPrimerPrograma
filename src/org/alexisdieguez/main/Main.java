@@ -12,7 +12,7 @@ public class Main {
         //instanciar <- new
         ViewMenuPrincipal menu = new ViewMenuPrincipal();
         
-        System.out.println("Mi primer programa");
+        System.out.println("HT1");
         menu.mostrarMenu();
     }
     
