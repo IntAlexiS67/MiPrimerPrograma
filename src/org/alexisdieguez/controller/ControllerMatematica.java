@@ -6,7 +6,7 @@ package org.alexisdieguez.controller;
 
 /**
  *
- * @author AlexiS DiégueZ :D
+ * @author AlexiS Diéguez :D
  */
 public class ControllerMatematica {
 
