@@ -3,7 +3,7 @@ package org.alexisdieguez.main;
 import org.alexisdieguez.view.ViewMenuPrincipal;
 /**
 *
-* @author Alexis Diéguez :D
+* @author AlexiS Diéguez :D
 */
 public class Main {
 
