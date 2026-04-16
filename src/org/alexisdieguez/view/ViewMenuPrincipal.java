@@ -1,7 +1,7 @@
 package org.alexisdieguez.view;
 /**
  *
- * @author Alexis Diéguez :D
+ * @author AlexiS Diéguez :D
  */
 import org.alexisdieguez.controller.ControllerMatematica;
 import org.alexisdieguez.controller.ControllerTexto;
